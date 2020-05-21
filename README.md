@@ -1,5 +1,5 @@
 
-##CI and Deployment
+## CI and Deployment##
 
 Postup práce na projekte
 1. Vytvorenie github repozitára
@@ -18,4 +18,4 @@ Github Pages - https://hemii.github.io/WPub_cicd/
 Princíp fungovania deployu:
 Pri každom pushnuti sa vymaže obsah branche "master" a následne sa znova prekopírujú upravené súbory. 
 
-#Meno: Anton Rusňák
+# Meno: Anton Rusňák
