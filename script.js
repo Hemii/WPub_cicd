@@ -4,7 +4,7 @@ new Vue({
   data: {
     CORS:'https://api.rss2json.com/v1/api.json?rss_url=',
     items: [],
-    feed: "https://www.sme.sk/rss-title" 
+    url: "https://www.sme.sk/rss-title" 
   },
 
   created: function () {
@@ -13,14 +13,14 @@ new Vue({
 
   methods: {
     fetchData: function () {
-      this.$http.get(this.CORS + this.feed).then(response => {
+      this.$http.get(this.CORS + this.url).then(response => {
         this.items = response.body;
         
       });
     },
    
     changeHandler: function (event) {
-      this.feed = event.target.value;
+      this.url = event.target.value;
       this.fetchData();
     },
     clicked: function () {
